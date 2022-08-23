@@ -1,0 +1,31 @@
+{
+  "name": "t11-abd-nada",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CA-G12/T11-abd-nada.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CA-G12/T11-abd-nada/issues"
+  },
+  "homepage": "https://github.com/CA-G12/T11-abd-nada#readme",
+  "dependencies": {
+    "env2": "^2.2.2",
+    "express": "^4.18.1",
+    "jest": "^28.1.3",
+    "pg": "^8.7.3",
+    "supertest": "^6.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "nodemon": "^2.0.19"
+  }
+}
