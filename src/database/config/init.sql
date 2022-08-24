@@ -1,7 +1,6 @@
 BEGIN;
 
-DROP TABLE IF EXISTS users;
-
+ DROP TABLE IF EXISTS products ,category CASCADE;
 CREATE TABLE products(
     id SERIAL PRIMARY KEY,
     name varchar(100) NOT NULL,
