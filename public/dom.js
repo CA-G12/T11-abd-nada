@@ -11,9 +11,10 @@ button.addEventListener('click', () => {
     }).then(data => data.json()).then(res => renderCards(res.rows) )
 })
 
-
 const renderCards = (books) => {
     const booksContainer = document.querySelector('#booksContainer');
+
+    // booksContainer.textContent = ''
 
     books.forEach(book => {
         const container = document.createElement('div')
