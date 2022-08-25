@@ -8,8 +8,11 @@ if (!DB_URL)
 }
 
 const connection = new Pool({
-    connectionString: DB_URL,
-    ssl: false
+    connectionString:process.env. DB_URL ,
+    ssl: {
+        rejectUnauthorized: false,
+      },
+
 })
 
 module.exports = connection;
