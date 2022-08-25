@@ -16,9 +16,11 @@ box-sizing: border-box;
     justify-content: space-evenly
 }
 .form{
-    background-color: rgba(255, 255, 255, .4);
-    width: 350px;
-    min-height: 250px;
+    color: #fff;
+    background-color: rgba(112, 103, 103, 0.4);
+    width: 386px;
+    border-radius: 30px;
+    min-height: 210px;;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,4 +55,10 @@ box-sizing: border-box;
 .container{
     padding:15px 15px 0 15px;
     background-color: rgba(255, 255, 255, .3) ;
+}
+.text{
+    border: 0;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 10px;
 }
