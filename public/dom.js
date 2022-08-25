@@ -1,7 +1,20 @@
+const button = document.querySelector('.button')
+const input = document.querySelector('input')
+const textarea = document.querySelector('textarea')
+button.addEventListener('click', () => {
+    fetch('/api/v1/books', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify({bookName:input.value, bookdescription:textarea.value})
+    }).then(data => data.json()).then(res => renderCards(res.rows) )
+})
+
 const renderCards = (books) => {
     const booksContainer = document.querySelector('#booksContainer');
 
-    booksContainer.textContent = ''
+    // booksContainer.textContent = ''
 
     books.forEach(book => {
         const container = document.createElement('div')

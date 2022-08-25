@@ -1,8 +1,8 @@
 const connection = require("../config/connection")
- const added=({name, description,author})=>{
+const added = ({ bookName, bookdescription })=>{
     const sql = {
-        text: `insert into book(name, description, author_id) values($1, $2,$3) returning *;`,
-        values: [name, description,author],
+        text: `insert into book(name, description) values($1, $2) returning *;`,
+      values: [bookName, bookdescription],
       };
     
       
